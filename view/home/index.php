@@ -44,8 +44,8 @@
 					<th scope="col">Acciones</th>
 				</tr>
 			</thead>
-			<tbody>
-				<tr>
+			<tbody id="data">
+				<!-- <tr>
 					<th scope="row">1</th>
 					<td>Mark</td>
 					<td>Otto</td>
@@ -58,11 +58,12 @@
 							<i class="bi bi-trash"></i>
 						</button>
 					</td>
-				</tr>
+				</tr> -->
 			</tbody>
 		</table>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<script src="../../js/fetch.js"></script>
 </body>
 
 </html>
