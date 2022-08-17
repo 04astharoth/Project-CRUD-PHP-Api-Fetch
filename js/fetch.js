@@ -1,4 +1,4 @@
-fetch("../../controller/controller.php")
+fetch("../../controller/controller.php?op=listar")
 	.then((response) => response.json())
 	//.then(text => console.log(text))
 	.then((response) =>
