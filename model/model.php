@@ -14,13 +14,12 @@ class consultas extends dbconexion
     {
         $conectar = dbconexion::conexion();
         $sql = $conectar->prepare("INSERT INTO persona (nombres,apellidos,genero) VALUES (?,?,?)");
-        $sql = bindValue(1, $nombres);
-        $sql = bindValue(2, $apellidos);
-        $sql = bindValue(3, $genero);
-
+        $sql->bindValue(1, $nombres);
+        $sql->bindValue(2, $apellidos);
+        $sql->bindValue(3, $genero);
+        
         if ($sql->execute()) {
-            $resultado = self::get_personas();
-            return $resultado;
-        } 
+            return $resultado = self::get_personas();
+        }
     }
 }
