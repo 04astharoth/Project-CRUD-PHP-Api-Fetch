@@ -5,12 +5,13 @@ fetch("../../controller/controller.php?op=listar")
 		response.map((data) => {
 			//console.log("Success", data);
 			let tbody = document.querySelector("#data");
+			//tbody.innerHTML="";
 			let row = document.createElement("tr");
 			// obteniendo data de la response
 			for (const [key, value] of Object.entries(data)) {
 				let elemento = key == "id_persona" ? "th" : "td";
 				let td = document.createElement(elemento);
-				//element.innerHTML = `${key}: ${value}`
+				//se adiciona el valor de la clave, del objeto, al td
 				td.innerHTML = `${value}`;
 				row.append(td);
 			}
@@ -20,10 +21,6 @@ fetch("../../controller/controller.php?op=listar")
 				'<button type="button" class="btn btn-success"><i class="bi bi-arrow-repeat"></i></button><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>';
 			row.appendChild(colAcciones);
 			tbody.append(row);
-			//   let resultDiv = document.querySelector("#result")
-			//   let element = document.createElement('p');
-			//   element.innerHTML = JSON.stringify(data)
-			//   resultDiv.append(element);
 		})
 	)
 	.catch((err) => console.log(`error is: ${err}`));
