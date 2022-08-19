@@ -19,9 +19,10 @@ switch ($_GET["op"]) {
         break;
 
     case 'guardar':
-        $nombres = $_POST["nombres"];
-        $apellidos = $_POST["apellidos"];
-        $genero = $_POST["genero"];
+        //$datos = json_decode(file_get_contents('php://input'), true);
+        $nombres = $_POST['nombres'];
+        $apellidos = $_POST['apellidos'];
+        $genero = $_POST['genero'];
         $insercion = $sentencia->insert_persona($nombres, $apellidos, $genero);
         echo json_encode($insercion);
         break;
