@@ -31,36 +31,21 @@
 					<button class="btn btn btn-primary" type="submit">Guardar</button>
 				</div>
 			</div>
-		</form>
-	</div>
-	<div class="container mt-4">
-		<table class="table">
-			<thead>
-				<tr>
-					<th scope="col">#</th>
-					<th scope="col">Nombres</th>
-					<th scope="col">Apellidos</th>
-					<th scope="col">Genero</th>
+		</div>
+		<div class="container mt-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Nombres</th>
+						<th scope="col">Apellidos</th>
+						<th scope="col">Genero</th>
 					<th scope="col">Acciones</th>
 				</tr>
 			</thead>
-			<tbody id="data">
-				<!-- <tr>
-					<th scope="row">1</th>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-					<td>
-						<button type="button" class="btn btn-success">
-							<i class="bi bi-arrow-repeat"></i>
-						</button>
-						<button type="button" class="btn btn-danger">
-							<i class="bi bi-trash"></i>
-						</button>
-					</td>
-				</tr> -->
-			</tbody>
+			<tbody id="data"></tbody>
 		</table>
+	</form>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<script src="../../js/fetch.js"></script>
