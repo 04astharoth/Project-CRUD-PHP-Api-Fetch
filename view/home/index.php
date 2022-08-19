@@ -48,8 +48,8 @@
 		</form>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-	<script src="../../js/fetch.js"></script>
-	<script src="../../js/submitFormData.js"></script>
+	<script src="../../js/fetchGet.js"></script>
+	<script src="../../js/fetchPut.js"></script>
 </body>
 
 </html>
