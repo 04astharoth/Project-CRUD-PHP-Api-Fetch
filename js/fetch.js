@@ -13,7 +13,7 @@ fetch("../../controller/controller.php?op=listar")
          <td class="text-center">${registro.genero}</td>
          <td class="text-center">
          <button class="btn btn-primary btn-sm" onclick="editar(${registro.id_persona})">Editar</button>
-         <button class="btn btn-danger btn-sm" onclick="eliminar(${registro.id_persona})">eliminar</button>
+         <button class="btn btn-danger btn-sm" onclick="eliminar(${registro.id_persona})">Eliminar</button>
          </td>
          </tr>
          `;
