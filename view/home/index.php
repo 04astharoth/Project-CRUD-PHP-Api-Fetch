@@ -31,21 +31,21 @@
 					<button class="btn btn btn-primary" type="submit">Guardar</button>
 				</div>
 			</div>
-		</div>
-		<div class="container mt-4">
-			<table class="table">
-				<thead>
-					<tr>
-						<th scope="col">#</th>
-						<th scope="col">Nombres</th>
-						<th scope="col">Apellidos</th>
-						<th scope="col">Genero</th>
-					<th scope="col">Acciones</th>
+	</div>
+	<div class="container mt-4">
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col" class="text-center">#</th>
+					<th scope="col" class="text-center">Nombres</th>
+					<th scope="col" class="text-center">Apellidos</th>
+					<th scope="col" class="text-center">Genero</th>
+					<th scope="col" class="text-center">Acciones</th>
 				</tr>
 			</thead>
 			<tbody id="data"></tbody>
 		</table>
-	</form>
+		</form>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<script src="../../js/fetch.js"></script>
