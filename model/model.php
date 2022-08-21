@@ -58,7 +58,6 @@ class consultas extends dbconexion
         $sql->execute();
         if ($sql->rowCount() > 0) {
             return $resultado = self::get_personas();
-            // return "Se elimino correctamente el registro";
         }
     }
 }
