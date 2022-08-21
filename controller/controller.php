@@ -2,11 +2,11 @@
 require_once "../config/dbconexion.php";
 require_once "../model/model.php";
 
-$sentencia = new consultas();
+$consultas = new consultas();
 
 switch ($_GET["op"]) {
     case 'listar':
-        $result_set = $sentencia->get_personas(); // devuelve un conjunto de arreglos, cada arreglo es una fila de la tabla de la db
+        $result_set = $consultas->get_personas(); // devuelve un conjunto de arreglos, cada arreglo es una fila de la tabla de la db
         $data = array();
         foreach ($result_set as $row) {
             //echo "{'id':'".$row["id_persona"]."'}";
@@ -23,8 +23,15 @@ switch ($_GET["op"]) {
         $nombres = $_POST['nombres'];
         $apellidos = $_POST['apellidos'];
         $genero = $_POST['genero'];
-        $insercion = $sentencia->insert_persona($nombres, $apellidos, $genero);
+        $insercion = $consultas->insert_persona($nombres, $apellidos, $genero);
         echo json_encode($insercion);
+        break;
+    
+    case 'editar':
+        # code...
+        break;
+    case 'eliminar':
+        # code...
         break;
 
     default:
