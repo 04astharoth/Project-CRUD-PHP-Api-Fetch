@@ -32,6 +32,10 @@ formdata.addEventListener("submit", (e) => {
 			console.log(`Success: ${JSON.stringify(data)}`);
 			dibujarTabla(data);
 			formdata.reset();
+			swal({
+				title: "¡Registro Exitoso!",
+				icon: "success",
+			});
 		})
 		.catch((error) => console.log(`error: ${error}`));
 });
