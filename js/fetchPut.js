@@ -1,9 +1,6 @@
 const dibujarTabla = (data) => {
 	let tbody = document.querySelector("#data");
 	tbody.innerHTML = "";
-	//let registro = document.createElement("tr");
-	// recorre las columnas de la fila
-	//for (const [key, value] of Object.entries(data)) {
 	for (let registro of data) {
 		tbody.innerHTML += `
          <tr>
@@ -28,13 +25,11 @@ formdata.addEventListener("submit", (e) => {
 	let url = "../../controller/controller.php?op=guardar";
 	fetch(url, {
 		method: "post",
-		//body: JSON.stringify(obj),
 		body: datos,
-		//headers: { "Content-Type": "application/json;charset=utf-8" },
 	})
-		.then((response) => response.json())
+		.then((data) => data.json())
 		.then((data) => {
-			console.log(`Success: ${data}`);
+			console.log(`Success: ${JSON.stringify(data)}`);
 			dibujarTabla(data);
 			formdata.reset();
 		})
