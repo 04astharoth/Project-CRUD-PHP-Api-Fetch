@@ -26,12 +26,14 @@ switch ($_GET["op"]) {
         $insercion = $consultas->insert_persona($nombres, $apellidos, $genero);
         echo json_encode($insercion);
         break;
-    
+
     case 'editar':
-        # code...
+        $id = $_POST['id'];
+        echo "se editara el registro con id ".$id;
         break;
     case 'eliminar':
-        # code...
+        $id = $_POST['id'];
+        echo "se eliminara el registro con id " . $id;
         break;
 
     default:
