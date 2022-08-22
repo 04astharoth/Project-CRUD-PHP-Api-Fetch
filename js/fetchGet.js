@@ -19,4 +19,4 @@ fetch("../../controller/controller.php?op=listar")
          `;
 		}
 	})
-	.catch((err) => console.log(`error is: ${err}`));
+	//.catch((err) => console.log(`error is: ${err}`));
