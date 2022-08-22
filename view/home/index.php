@@ -13,21 +13,21 @@
 <body>
 	<div class="container mt-3">
 		<form action="" id="formdata">
-			<div class="row">
+			<div class="row gy-3">
 				<div class="col-md-3 ">
 					<input type="text" name="nombres" id="nombres" class="form-control" placeholder="Nombres">
 				</div>
 				<div class="col-md-3">
 					<input type="text" name="apellidos" id="apellidos" class="form-control" placeholder="Apellidos">
 				</div>
-				<div class="d-grid gap-2 col-3 mx-auto">
+				<div class="d-grid gap-2 col-md-3">
 					<select name="genero" id="genero">
 						<option value="">Seleccione Genero</option>
 						<option value="Masculino">Masculino</option>
 						<option value="Femenino">Femenino</option>
 					</select>
 				</div>
-				<div class="d-grid gap-2 col-3 mx-auto">
+				<div class="d-grid gap-2 col-md-3">
 					<button class="btn btn btn-primary" type="submit">Guardar</button>
 				</div>
 			</div>
