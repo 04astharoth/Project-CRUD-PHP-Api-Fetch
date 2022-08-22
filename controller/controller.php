@@ -28,8 +28,9 @@ switch ($_GET["op"]) {
         break;
 
     case 'editar':
-        $id = $_POST['id'];
-        echo "se editara el registro con id ".$id;
+        $id_persona = $_POST['id'];
+        $ejecutar = $consultas->get_persona($id_persona);
+        echo json_encode($ejecutar);
         break;
     case 'eliminar':
         $id = $_POST['id'];
