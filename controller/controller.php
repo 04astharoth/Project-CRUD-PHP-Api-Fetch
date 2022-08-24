@@ -32,6 +32,14 @@ switch ($_GET["op"]) {
         $ejecutar = $consultas->get_persona($id_persona);
         echo json_encode($ejecutar);
         break;
+    case 'update':
+        $id_persona = $_POST['idUdt'];
+        $nombres = $_POST['nombresUdt'];
+        $apellidos = $_POST['apellidosUdt'];
+        $genero = $_POST['generoUdt'];
+        $actualizacion = $consultas->update_persona($id_persona,$nombres, $apellidos, $genero);
+        echo json_encode($actualizacion);
+        break;
     case 'eliminar':
         $id = $_POST['id'];
         echo "se eliminara el registro con id " . $id;
