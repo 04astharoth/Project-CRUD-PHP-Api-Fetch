@@ -21,7 +21,7 @@
 					<input type="text" name="apellidos" id="apellidos" class="form-control" placeholder="Apellidos">
 				</div>
 				<div class="d-grid gap-2 col-md-3">
-					<select name="genero" id="genero">
+					<select name="genero" id="genero" class="form-control">
 						<option value="">Seleccione Genero</option>
 						<option value="Masculino">Masculino</option>
 						<option value="Femenino">Femenino</option>
@@ -48,7 +48,8 @@
 		</form>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="../../js/datatable.js"></script>
 	<script src="../../js/fetchGet.js"></script>
 	<script src="../../js/fetchPut.js"></script>
 	<script src="../../js/fetchUpdate.js"></script>
