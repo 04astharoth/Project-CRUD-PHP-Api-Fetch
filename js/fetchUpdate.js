@@ -55,7 +55,7 @@ const editar = (id) => {
 							return response.json();
 						})
 						.catch((error) => {
-							Swal.showValidationMessage(`Request failed: ${error}`);
+							Swal.showValidationMessage(`Error en Solicitud: ${error}`);
 						});
 				},
 			}).then((result) => {
@@ -64,7 +64,7 @@ const editar = (id) => {
 					dibujarTabla(result.value);
 					Swal.fire("Exito", "Registro actualizado con exito", "success");
 				} else if (result.isDenied) {
-					Swal.fire("Changes are not saved", "", "info");
+					Swal.fire("Los Cambios no fueron guardados", "", "info");
 				}
 			});
 		})
