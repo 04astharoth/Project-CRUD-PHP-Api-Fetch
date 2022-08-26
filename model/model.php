@@ -51,7 +51,7 @@ class consultas extends dbconexion
         }
     }
 
-    public function eliminar_persona($id_persona)
+    public function delete_persona($id_persona)
     {
         $conectar = dbconexion::conexion();
         $sql = $conectar->prepare("DELETE FROM persona WHERE id_persona='" . $id_persona . "'");

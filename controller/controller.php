@@ -41,8 +41,9 @@ switch ($_GET["op"]) {
         echo json_encode($actualizacion);
         break;
     case 'eliminar':
-        $id = $_POST['id'];
-        echo "se eliminara el registro con id " . $id;
+        $id_persona = $_POST['id'];
+        $ejecutar = $consultas->delete_persona($id_persona);
+        echo json_encode($ejecutar);
         break;
 
     default:
