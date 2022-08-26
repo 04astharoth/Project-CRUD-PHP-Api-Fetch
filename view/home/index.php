@@ -32,6 +32,9 @@
 				</div>
 			</div>
 	</div>
+	<br>
+	<div class="container" id="mensajes"></div>
+	<br>
 	<div class="container mt-4">
 		<table class="table table-bordered">
 			<thead>
@@ -54,6 +57,7 @@
 	<script src="../../js/fetchPut.js"></script>
 	<script src="../../js/fetchUpdate.js"></script>
 	<script src="../../js/fetchDelete.js"></script>
+	<script src="../../js/formValidations.js"></script>
 </body>
 
 </html>
