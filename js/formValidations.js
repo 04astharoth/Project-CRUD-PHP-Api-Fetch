@@ -1,13 +1,13 @@
 let mensajes = document.querySelector("#mensajes");
 const errorAlert = (alerta) => {
 	mensajes.innerHTML = `
-	<div class="row">
-	<div class="col-md-5 offset-md-3">
-	<div class="alert alert-danger" role="alert">
-	<h4 class="alert-heading">Error!</h4>
-	<P>${alerta}</P>
-	</div>
-	</div>
+	<div class="row justify-content-md-center">
+		<div class="col">
+			<div class="alert alert-danger mb-0" role="alert">
+				<h4 class="alert-heading">Error!</h4>
+				<P class="mb-0">${alerta}</P>
+			</div>
+		</div>
 	</div>
 	`;
 };
@@ -18,20 +18,20 @@ const validate = (formFields) => {
 	let genero = formFields.get("genero");
 	let alerta = "";
 	mensajes.innerHTML = "";
-	let sinErrores = true
+	let sinErrores = true;
 
 	if (nombres == "") {
-		alerta += 'Debe rellenar el campo "Nombres"!';
+		alerta += '*Debe rellenar el campo "Nombres"!<br>';
 		errorAlert(alerta);
 		sinErrores = false;
 	}
 	if (apellidos == "") {
-		alerta += '<br>*Debe rellenar el campo "Apellidos"!';
+		alerta += '*Debe rellenar el campo "Apellidos"!<br>';
 		errorAlert(alerta);
-        sinErrores = false;
+		sinErrores = false;
 	}
 	if (genero == "") {
-		alerta += '<br>*Debe rellenar el campo "Genero"!';
+		alerta += '*Debe rellenar el campo "Genero"!';
 		errorAlert(alerta);
 		sinErrores = false;
 	}
