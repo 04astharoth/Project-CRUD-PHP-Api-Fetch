@@ -10,9 +10,8 @@ switch ($_GET["op"]) {
         $data = array();
         foreach ($result_set as $row) {
             array_push($data, array("id_persona" => $row['id_persona'], "nombres" => $row['nombres'], "apellidos" => $row['apellidos'], "genero" => $row['genero']));
-            $json = json_encode($data); //formateado como json
         }
-        echo $json;
+        echo json_encode($data); //formateado como json
         break;
 
     case 'guardar':
@@ -33,7 +32,7 @@ switch ($_GET["op"]) {
         $nombres = $_POST['nombresUdt'];
         $apellidos = $_POST['apellidosUdt'];
         $genero = $_POST['generoUdt'];
-        $actualizacion = $consultas->update_persona($id_persona,$nombres, $apellidos, $genero);
+        $actualizacion = $consultas->update_persona($id_persona, $nombres, $apellidos, $genero);
         echo json_encode($actualizacion);
         break;
     case 'eliminar':
