@@ -8,10 +8,14 @@ switch ($_GET["op"]) {
     case 'listar':
         $result_set = $consultas->get_personas(); // devuelve un conjunto de arreglos, cada arreglo es una fila de la tabla de la db
         $data = array();
+        //if (count($result_set) > 0) {
         foreach ($result_set as $row) {
             array_push($data, array("id_persona" => $row['id_persona'], "nombres" => $row['nombres'], "apellidos" => $row['apellidos'], "genero" => $row['genero']));
         }
         echo json_encode($data); //formateado como json
+        /* } else {
+            print(json_encode(array("No hay registros en la base de datos.")));
+        } */
         break;
 
     case 'guardar':
