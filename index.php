@@ -13,7 +13,7 @@
 <body>
     <center>
         <br>
-        <a href="view/home">Create</a>
+        <a href="view/viewPersonas">Create</a>
     </center>
 </body>
 
